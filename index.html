@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemanth Sachin M. — Embedded & Robotics Engineer</title>
+  <meta name="description" content="Hemanth Sachin M. — Embedded & Robotics Engineer specializing in Autonomous Systems, IoT, ROS2, and Edge AI. 2+ years delivering real-world robotic deployments." />
+  <meta name="keywords" content="Embedded Engineer, Robotics, ROS2, IoT, Autonomous Systems, Raspberry Pi, ESP32, FastAPI, Computer Vision" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hemanth Sachin M. — Embedded & Robotics Engineer" />
+  <meta property="og:description" content="Building autonomous robots and connected IoT systems from firmware to field deployment." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ─────────────────────────────────────────
+       NAVIGATION
+  ───────────────────────────────────────── -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        Hello
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <a href="mailto:contact@hemanthsachin.in" class="nav-cta">
+        <span class="nav-cta-dot"></span> Hire Me
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─────────────────────────────────────────
+       HERO
+  ───────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-image">
+      <img src="images/hero_bg.jpg" alt="Embedded Systems & Robotics" />
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-content" data-aos>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to Full-Time
+        </div>
+
+        <h1 class="hero-name">Hemanth Sachin M.</h1>
+
+        <div class="hero-title-row">
+          <span class="hero-title-label">I engineer </span>
+          <span class="role-dynamic" id="roleDynamic"></span>
+        </div>
+
+        <p class="hero-subtitle">
+          Embedded &amp; Robotics Engineer &nbsp;·&nbsp; Autonomous Systems &nbsp;·&nbsp; IoT &amp; Edge Computing
+        </p>
+
+        <p class="hero-description">
+          2+ years building production-grade autonomous robots and end-to-end IoT platforms —
+          from bare-metal firmware and sensor fusion to computer vision pipelines and cloud-connected
+          REST backends. I own full system life-cycles: prototype → integration → field deployment.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-target="2" data-suffix="+">2+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="50" data-suffix="+">50+</span>
+            <span class="stat-label">Images / Vehicle</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="8" data-suffix="+">8+</span>
+            <span class="stat-label">IoT Devices Live</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="4" data-suffix="">4</span>
+            <span class="stat-label">Robots Built</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-socials">
+          <a href="mailto:contact@hemanthsachin.in" class="social-link" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="tel:9361158630" class="social-link" title="Phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.62 4.87 2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Right: Avatar -->
+      <div class="hero-visual" data-aos data-aos-delay="200">
+        <div class="avatar-frame">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring r1"></div>
+          <div class="avatar-ring r2"></div>
+          <div class="avatar-core">
+            <div class="avatar-initials">HS</div>
+            <div class="avatar-status">
+              <span class="status-dot"></span>
+              <span>Available</span>
+            </div>
+          </div>
+          <!-- Orbiting tech chips -->
+          <div class="orbit-chip oc-1">🤖 ROS2</div>
+          <div class="orbit-chip oc-2">🍓 RPi</div>
+          <div class="orbit-chip oc-3">📡 MQTT</div>
+          <div class="orbit-chip oc-4">⚡ ESP32</div>
+          <div class="orbit-chip oc-5">🐍 Python</div>
+          <div class="orbit-chip oc-6">👁 OpenCV</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       ABOUT
+  ───────────────────────────────────────── -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About Me</span>
+        <h2 class="section-title">Turning Hardware into Intelligence</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Bio -->
+        <div class="about-bio" data-aos>
+          <p class="bio-lead">
+            I'm a passionate Embedded &amp; Robotics Engineer who thrives at the intersection of
+            hardware, firmware, and intelligent software — building systems that sense the world and act on it.
+          </p>
+          <p>
+            My engineering career has been defined by end-to-end ownership. At <strong>Tarcin Robotic LLP</strong>,
+            I took an autonomous inspection rover from concept through hardware design, embedded firmware,
+            navigation logic, and a full computer vision pipeline. That means I've shipped real robots to real customers.
+          </p>
+          <p>
+            Alongside robotics, I've designed a complete IoT smart-home platform with ESP32 devices,
+            cloud-connected APIs, secure remote access tunnels, and a PostgreSQL backend —
+            running live on a self-hosted Linux/Proxmox infrastructure.
+          </p>
+          <p>
+            I'm a strong believer in clean code, thorough testing, and systems thinking.
+            Whether it's optimizing motor control loops in C/C++,Python , designing RESTful APIs in FastAPI,
+            or containerizing services with Docker — I bring the same engineering rigour to every layer.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-val">Tamil Nadu, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Availability</span>
+              <span class="info-val" style="color:#4ade80;">Open to Opportunities</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Experience</span>
+              <span class="info-val">2+ Years</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Education</span>
+              <span class="info-val">B.E. ECE — SIT 2024</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <a href="tel:9361158630" class="info-val info-link">+91 93611 58630</a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <a href="mailto:contact@hemanthsachin.in" class="info-val info-link">contact@hemanthsachin.in</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Cards -->
+        <div class="about-cards" data-aos data-aos-delay="100">
+          <!-- Education -->
+          <div class="about-card">
+            <div class="ac-header">
+              <div class="ac-icon">🎓</div>
+              <div>
+                <h4>B.E. Electronics &amp; Communication Engineering</h4>
+                <p>Sethu Institute of Technology</p>
+              </div>
+              <span class="ac-year">2024</span>
+            </div>
+            <p class="ac-desc">Graduated with a strong foundation in embedded systems, signal processing, microcontroller programming, and communication protocols — directly applied to every project since.</p>
+          </div>
+
+          <!-- Core Philosophy -->
+          <div class="about-card highlight-card">
+            <div class="ac-icon-row">
+              <span>⚙️</span><span>🧠</span><span>🚀</span>
+            </div>
+            <h4>Engineering Philosophy</h4>
+            <p class="ac-desc">
+              I believe great engineers own problems end-to-end. I don't hand off broken prototypes —
+              I debug down to the register level, trace through packet logs, and stay until it works in the field.
+            </p>
+            <div class="trait-pills">
+              <span>System Thinker</span>
+              <span>Self-Directed</span>
+              <span>Field-Tested</span>
+              <span>Full-Stack Embedded</span>
+            </div>
+          </div>
+
+          <!-- Domains -->
+          <div class="about-card">
+            <h4 class="ac-domain-title">Core Domains</h4>
+            <div class="domain-list">
+              <div class="domain-item">
+                <span class="domain-icon">🤖</span>
+                <div>
+                  <strong>Autonomous Robotics</strong>
+                  <p>Navigation, mission planning, sensor fusion, real-world deployment</p>
+                </div>
+              </div>
+              <div class="domain-item">
+                <span class="domain-icon">📡</span>
+                <div>
+                  <strong>IoT & Connected Systems</strong>
+                  <p>Edge firmware, MQTT, REST APIs, cloud backends, remote access</p>
+                </div>
+              </div>
+              <div class="domain-item">
+                <span class="domain-icon">👁</span>
+                <div>
+                  <strong>Computer Vision</strong>
+                  <p>OpenCV pipelines, automated image capture, camera integration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       EXPERIENCE
+  ───────────────────────────────────────── -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experience</span>
+        <h2 class="section-title">Professional Journey</h2>
+        <p class="section-sub">Real products. Real deployments. Real impact.</p>
+      </div>
+
+      <div class="exp-layout">
+        <!-- Timeline -->
+        <div class="exp-timeline">
+          <div class="exp-item active" data-exp="tarcin">
+            <div class="exp-dot"></div>
+            <div class="exp-meta">
+              <strong>Tarcin Robotic LLP</strong>
+              <span>Apr 2024 – Aug 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="exp-detail" id="exp-tarcin">
+          <div class="exp-header">
+            <div class="exp-logo">TR</div>
+            <div>
+              <h3>Embedded Engineer</h3>
+              <span class="exp-company">Tarcin Robotic LLP &nbsp;·&nbsp; Full-Time</span>
+            </div>
+            <span class="exp-date">Apr 2024 – Aug 2026</span>
+          </div>
+
+          <p class="exp-summary">
+            Joined as the embedded systems engineer responsible for the full development lifecycle of the company's
+            flagship product — an autonomous under-chassis inspection rover. Also contributed to advanced robotics
+            R&amp;D at Tarcin, building a NOVA SM3-inspired quadruped walking robot and an InMoov humanoid head as
+            internal capability demonstrations. Led IoT platform development, owning architecture through to production deployment.
+          </p>
+
+          <div class="exp-accomplishments">
+            <h4>Key Accomplishments</h4>
+
+            <div class="acc-item">
+              <div class="acc-icon">🚗</div>
+              <div>
+                <strong>Autonomous Rover — ClearQuote × Kia Deployment</strong>
+                <p>Led end-to-end development of an autonomous under-chassis inspection rover for commercial Kia vehicle inspection via ClearQuote. Managed hardware selection (Raspberry Pi, camera, motor drivers, IMU, OLED), embedded firmware, navigation logic, and the complete image acquisition pipeline from scratch.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-icon">🧭</div>
+              <div>
+                <strong>Mission-Based Autonomous Navigation</strong>
+                <p>Implemented a mission sequencer using IMU feedback for dead-reckoning navigation and closed-loop DC motor control on Raspberry Pi. The rover reliably executes pre-programmed inspection paths under vehicles with no human intervention.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-icon">📸</div>
+              <div>
+                <strong>Automated Image Acquisition Pipeline</strong>
+                <p>Built an OpenCV-based image capture pipeline triggered by mission waypoints, capturing 50 high-resolution under-chassis images per vehicle inspection cycle — replacing a fully manual process.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-icon">🏠</div>
+              <div>
+                <strong>IoT Smart-Home Platform — 8 Devices Live</strong>
+                <p>Architected and deployed an end-to-end smart-home automation platform: ESP32 MQTT firmware, FastAPI + PostgreSQL REST backend, device registration/control/status APIs, Nginx reverse proxy, and a Cloudflare Tunnel for secure remote access — all running on a self-hosted Linux server, supporting 8 registered devices.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-icon">🔧</div>
+              <div>
+                <strong>Cross-Platform Embedded Systems Engineering</strong>
+                <p>Designed, built, and debugged systems across Raspberry Pi, ESP32, Arduino Uno/Mega, and NodeMCU platforms. Covered full hardware-software integration, bench testing, field troubleshooting, and deployment handoff.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-icon">🦾</div>
+              <div>
+                <strong>NOVA SM3-Inspired Quadruped Walking Robot — R&amp;D</strong>
+                <p>Built a 12-DOF quadruped walking robot from the ground up as part of Tarcin's internal robotics R&amp;D initiative. Assembled the full mechanical frame, wired 12 MG996R servo motors across four legs, and developed custom inverse kinematics in embedded C for smooth leg trajectories. Programmed and tuned crawl, trot, and turn gaits on an Arduino Mega, achieving stable static and dynamic balance on flat and inclined surfaces. This project expanded the company's technical capability in legged locomotion systems.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-icon">🤖</div>
+              <div>
+                <strong>InMoov Humanoid Head — Expressive Robotic Platform</strong>
+                <p>Designed and built a fully functional InMoov open-source humanoid head as a robotics capability demo at Tarcin. Printed all structural components on an FDM 3D printer, integrated 5 servo motors for head pan/tilt and binocular eye movement, and developed Arduino firmware for smooth coordinated multi-servo control. Built a custom wiring harness and power distribution board inside the head cavity, and implemented a serial command interface for real-time remote control. Demonstrated the system to showcase the company's humanoid robotics expertise to prospective clients.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-tags">
+            <span>ROS / ROS2</span><span>Python</span><span>C / C++</span><span>Raspberry Pi</span>
+            <span>OpenCV</span><span>IMU</span><span>ESP32</span><span>Arduino Mega</span>
+            <span>MQTT</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span>
+            <span>Linux</span><span>Nginx</span><span>Cloudflare</span>
+            <span>Servo Control</span><span>Inverse Kinematics</span><span>3D Printing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       PROJECTS
+  ───────────────────────────────────────── -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-sub">From concept to deployment — every project is a complete system, not a demo.</p>
+      </div>
+
+      <!-- Project 1 — Featured -->
+      <div class="project-featured" data-aos>
+        <div class="pf-image">
+          <img src="images/project_rover.jpg" alt="Autonomous Under-Chassis Inspection Rover" loading="lazy" />
+        </div>
+        <div class="pf-content">
+          <span class="pf-number">01</span>
+          <div class="pf-label">Featured Project</div>
+          <h3>Autonomous Under-Chassis Inspection Rover</h3>
+          <p class="pf-client">Client: ClearQuote × Kia Motors</p>
+          <p class="pf-desc">
+            Designed a compact autonomous rover that navigates beneath vehicle chassis
+            to conduct inspection missions for Kia vehicles at commercial service centres. The system
+            eliminates manual under-vehicle inspection .
+          </p>
+
+       
+
+          <ul class="pf-bullets">
+            <li>Designed the entire mechanical and electronics integration — from chassis layout to wiring harness</li>
+            <li>Implemented IMU-based dead-reckoning navigation with closed-loop motor speed control</li>
+            <li>Built a mission sequencer that triggers camera captures at precise vehicle positions</li>
+            <li>OLED display provides real-time mission status to the operator during inspection</li>
+            <li>Field tested and validated on multiple Kia vehicle models</li>
+          </ul>
+
+          <div class="pf-tags">
+            <span>Raspberry Pi</span><span>Python</span><span>OpenCV</span><span>IMU / MPU-6050</span>
+            <span>Motor Control</span><span>Autonomous Nav</span><span>OLED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 2 -->
+        <div class="project-card" data-aos>
+          <div class="pc-image">
+            <img src="images/project_smarthome.jpg" alt="Smart Home IoT Automation Platform" loading="lazy" />
+            <div class="pc-img-overlay">
+              <span class="pc-status">🟢 Live System</span>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-number">02</span>
+            <h3>Smart Home / IoT Automation Platform</h3>
+            <p class="pc-desc">
+              End-to-end IoT platform for remote home appliance control and monitoring.
+              Built the entire stack — from ESP32 firmware to cloud-deployed APIs and a secure remote access tunnel —
+              running live with 8 registered devices.
+            </p>
+
+            <div class="pc-arch">
+              <div class="arch-row">
+                <div class="arch-layer">
+                  <span class="arch-label">Device Layer</span>
+                  <div class="arch-items"><span>ESP32</span><span>NodeMCU</span><span>MQTT Firmware</span></div>
+                </div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-layer">
+                  <span class="arch-label">Backend</span>
+                  <div class="arch-items"><span>FastAPI</span><span>PostgreSQL</span><span>REST APIs</span></div>
+                </div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-layer">
+                  <span class="arch-label">Access</span>
+                  <div class="arch-items"><span>Nginx</span><span>Cloudflare Tunnel</span><span>Linux</span></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="pc-bullets">
+              <li>Custom ESP32 MQTT firmware for appliance on/off, status reporting, and heartbeat</li>
+              <li>FastAPI REST API with device registration, control endpoints, and live status polling</li>
+              <li>PostgreSQL database tracks device state, event logs, and configuration</li>
+              <li>Nginx reverse proxy + Cloudflare Tunnel for encrypted remote access without VPN</li>
+              <li>Self-hosted on a Linux server (Proxmox VM) — zero cloud fees</li>
+            </ul>
+
+            <div class="pc-tags">
+              <span>ESP32</span><span>MQTT</span><span>FastAPI</span><span>PostgreSQL</span>
+              <span>Nginx</span><span>Cloudflare Tunnel</span><span>Docker</span><span>Proxmox</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-aos data-aos-delay="100">
+          <div class="pc-image">
+            <img src="images/project_quadruped.jpg" alt="NOVA SM3-Inspired Quadruped Robot" loading="lazy" />
+            <div class="pc-img-overlay">
+              <span class="pc-status">🤖 Walking</span>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-number">03</span>
+            <h3>NOVA SM3-Inspired Quadruped Robot</h3>
+            <p class="pc-desc">
+              A multi-servo quadruped walking robot built from scratch, with custom leg kinematics
+              and gait sequences programmed for stable locomotion. Inspired by the NOVA SM3 open-source platform.
+            </p>
+
+            <ul class="pc-bullets">
+              <li>Designed and assembled the full mechanical structure with 12 servo motors (3 DOF per leg)</li>
+              <li>Programmed inverse kinematics for leg motion and smooth walking gaits</li>
+              <li>Implemented crawl, trot, and turn gaits using a custom motion controller</li>
+              <li>Powered by Arduino Mega with custom servo driver shields</li>
+              <li>Bench-tested for stable static and dynamic balance on flat and inclined surfaces</li>
+            </ul>
+
+            <div class="pc-tags">
+              <span>Arduino Mega</span><span>Servo Control</span><span>Inverse Kinematics</span>
+              <span>Gait Planning</span><span>Embedded C</span><span>3D Printing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-aos data-aos-delay="200">
+          <div class="pc-image">
+            <img src="images/project_inmoov.jpg" alt="InMoov Humanoid Head" loading="lazy" />
+            <div class="pc-img-overlay">
+              <span class="pc-status">🦾 Humanoid</span>
+            </div>
+          </div>
+          <div class="pc-body">
+            <span class="pc-number">04</span>
+            <h3>InMoov Humanoid Head</h3>
+            <p class="pc-desc">
+              3D-printed humanoid head with servo-driven head pan, tilt, and eye movement,
+              built on the open-source InMoov platform with custom electronics integration.
+            </p>
+
+            <ul class="pc-bullets">
+              <li>3D printed all structural components in PLA using an FDM printer</li>
+              <li>Integrated 5 servo motors for head pan/tilt and binocular eye movement</li>
+              <li>Developed Arduino firmware for coordinated multi-servo control</li>
+              <li>Built custom wiring harness and power distribution inside the head cavity</li>
+              <li>Interfaced with serial commands for real-time remote control</li>
+            </ul>
+
+            <div class="pc-tags">
+              <span>Arduino</span><span>Servo Control</span><span>3D Printing</span>
+              <span>Embedded C</span><span>Serial Comms</span><span>InMoov</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       SKILLS
+  ───────────────────────────────────────── -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Skills</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-sub">A hands-on toolkit built from real products — not just tutorials.</p>
+      </div>
+
+      <div class="skills-wrapper">
+
+        <!-- Category 1 -->
+        <div class="skill-cat" data-aos>
+          <div class="sc-header">
+            <div class="sc-icon-wrap sc-robotics">🤖</div>
+            <h3>Robotics &amp; Embedded</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-name">ROS / ROS2</span><div class="si-bar"><div class="si-fill" data-w="88"></div></div><span class="si-pct">88%</span></div>
+            <div class="skill-item"><span class="si-name">Raspberry Pi</span><div class="si-bar"><div class="si-fill" data-w="92"></div></div><span class="si-pct">92%</span></div>
+            <div class="skill-item"><span class="si-name">ESP32 / Arduino</span><div class="si-bar"><div class="si-fill" data-w="90"></div></div><span class="si-pct">90%</span></div>
+            <div class="skill-item"><span class="si-name">Motor &amp; Servo Control</span><div class="si-bar"><div class="si-fill" data-w="85"></div></div><span class="si-pct">85%</span></div>
+            <div class="skill-item"><span class="si-name">Autonomous Navigation</span><div class="si-bar"><div class="si-fill" data-w="80"></div></div><span class="si-pct">80%</span></div>
+            <div class="skill-item"><span class="si-name">Sensor Integration (IMU, Camera)</span><div class="si-bar"><div class="si-fill" data-w="87"></div></div><span class="si-pct">87%</span></div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-cat" data-aos data-aos-delay="50">
+          <div class="sc-header">
+            <div class="sc-icon-wrap sc-prog">💻</div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-name">Python</span><div class="si-bar"><div class="si-fill" data-w="90"></div></div><span class="si-pct">90%</span></div>
+            <div class="skill-item"><span class="si-name">C / C++</span><div class="si-bar"><div class="si-fill" data-w="82"></div></div><span class="si-pct">82%</span></div>
+            <div class="skill-item"><span class="si-name">OpenCV</span><div class="si-bar"><div class="si-fill" data-w="83"></div></div><span class="si-pct">83%</span></div>
+            <div class="skill-item"><span class="si-name">FastAPI</span><div class="si-bar"><div class="si-fill" data-w="80"></div></div><span class="si-pct">80%</span></div>
+            <div class="skill-item"><span class="si-name">SQL / PostgreSQL</span><div class="si-bar"><div class="si-fill" data-w="75"></div></div><span class="si-pct">75%</span></div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-cat" data-aos data-aos-delay="100">
+          <div class="sc-header">
+            <div class="sc-icon-wrap sc-iot">📡</div>
+            <h3>IoT &amp; Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-name">MQTT Protocol</span><div class="si-bar"><div class="si-fill" data-w="88"></div></div><span class="si-pct">88%</span></div>
+            <div class="skill-item"><span class="si-name">REST API Design</span><div class="si-bar"><div class="si-fill" data-w="84"></div></div><span class="si-pct">84%</span></div>
+            <div class="skill-item"><span class="si-name">ESP32 Firmware (IoT)</span><div class="si-bar"><div class="si-fill" data-w="88"></div></div><span class="si-pct">88%</span></div>
+            <div class="skill-item"><span class="si-name">HTTP / WebSockets</span><div class="si-bar"><div class="si-fill" data-w="78"></div></div><span class="si-pct">78%</span></div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-cat" data-aos data-aos-delay="150">
+          <div class="sc-header">
+            <div class="sc-icon-wrap sc-devops">⚙️</div>
+            <h3>Linux &amp; DevOps</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-name">Linux (Debian / Ubuntu)</span><div class="si-bar"><div class="si-fill" data-w="85"></div></div><span class="si-pct">85%</span></div>
+            <div class="skill-item"><span class="si-name">Git / GitHub</span><div class="si-bar"><div class="si-fill" data-w="82"></div></div><span class="si-pct">82%</span></div>
+            <div class="skill-item"><span class="si-name">Docker</span><div class="si-bar"><div class="si-fill" data-w="76"></div></div><span class="si-pct">76%</span></div>
+            <div class="skill-item"><span class="si-name">Nginx / Proxmox</span><div class="si-bar"><div class="si-fill" data-w="74"></div></div><span class="si-pct">74%</span></div>
+            <div class="skill-item"><span class="si-name">Networking / Cloudflare</span><div class="si-bar"><div class="si-fill" data-w="72"></div></div><span class="si-pct">72%</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="tools-section" data-aos>
+        <h3 class="tools-title">Tools &amp; Technologies</h3>
+        <div class="tools-grid">
+          <div class="tool-chip"><span>🤖</span> ROS2</div>
+          <div class="tool-chip"><span>🍓</span> Raspberry Pi</div>
+          <div class="tool-chip"><span>⚡</span> ESP32</div>
+          <div class="tool-chip"><span>🔵</span> Arduino</div>
+          <div class="tool-chip"><span>🐍</span> Python</div>
+          <div class="tool-chip"><span>⚙️</span> C / C++</div>
+          <div class="tool-chip"><span>👁</span> OpenCV</div>
+          <div class="tool-chip"><span>📡</span> MQTT</div>
+          <div class="tool-chip"><span>🚀</span> FastAPI</div>
+          <div class="tool-chip"><span>🐘</span> PostgreSQL</div>
+          <div class="tool-chip"><span>🐳</span> Docker</div>
+          <div class="tool-chip"><span>🐧</span> Linux</div>
+          <div class="tool-chip"><span>🌐</span> Nginx</div>
+          <div class="tool-chip"><span>☁️</span> Cloudflare</div>
+          <div class="tool-chip"><span>📦</span> Git / GitHub</div>
+          <div class="tool-chip"><span>🖥</span> Proxmox</div>
+          <div class="tool-chip"><span>📟</span> NodeMCU</div>
+          <div class="tool-chip"><span>🔌</span> Pico W</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       ACHIEVEMENTS
+  ───────────────────────────────────────── -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Achievements</span>
+        <h2 class="section-title">Impact &amp; Highlights</h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card" data-aos data-aos-delay="100">
+          <div class="ach-icon">🏠</div>
+          <h4>Self-Hosted IoT Platform</h4>
+          <p>Designed and runs a live smart-home system controlling 8 devices from anywhere in the world, on zero cloud subscription cost — built and maintained solo.</p>
+        </div>
+        <div class="ach-card" data-aos data-aos-delay="150">
+          <div class="ach-icon">🦾</div>
+          <h4>4 Robots Built</h4>
+          <p>From an autonomous rover and a walking quadruped to a humanoid head — all hardware built, programmed, debugged, and demonstrated from scratch.</p>
+        </div>
+        <div class="ach-card" data-aos data-aos-delay="200">
+          <div class="ach-icon">🔗</div>
+          <h4>Full-Stack Ownership</h4>
+          <p>Every project spans the full stack — hardware selection, PCB-level integration, firmware, computer vision, APIs, cloud deployment, and field handoff.</p>
+        </div>
+        <div class="ach-card" data-aos data-aos-delay="250">
+          <div class="ach-icon">⚡</div>
+          <h4>Multi-Platform Expertise</h4>
+          <p>Production experience across Raspberry Pi, ESP32, Arduino, Pico W, and NodeMCU — hardware debug skills that come from shipping, not just coding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       CONTACT
+  ───────────────────────────────────────── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's Build Something Great</h2>
+        <p class="section-sub">
+          I'm actively looking for embedded systems, robotics, or IoT engineering roles at forward-thinking companies.
+          If you're building something ambitious — let's talk.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info" data-aos>
+          <h3>Reach Out Directly</h3>
+          <p>Whether you have a role, a project, or just want to talk robots — I respond to every genuine message, usually within 24 hours.</p>
+
+          <div class="contact-methods">
+            <a href="mailto:contact@hemanthsachin.in" class="contact-method">
+              <div class="cm-icon">📧</div>
+              <div>
+                <span class="cm-label">Email</span>
+                <span class="cm-value">contact@hemanthsachin.in</span>
+              </div>
+              <svg class="cm-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="tel:9361158630" class="contact-method">
+              <div class="cm-icon">📱</div>
+              <div>
+                <span class="cm-label">Phone</span>
+                <span class="cm-value">+91 93611 58630</span>
+              </div>
+              <svg class="cm-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="#home" class="contact-method">
+              <div class="cm-icon">🌐</div>
+              <div>
+                <span class="cm-label">Website</span>
+                <span class="cm-value">hemanthsachin.in</span>
+              </div>
+              <svg class="cm-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="contact-note">
+            <span>💼</span>
+            <p>Open to <strong>full-time roles</strong>, in Embedded Systems, Robotics, and IoT Engineering.</p>
+          </div>
+        </div>
+
+        <!-- Quick Contact Form -->
+        <div class="contact-form-wrap" data-aos data-aos-delay="100">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="name" placeholder="John Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="email" placeholder="john@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="Engineering Role / Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about the role, project, or what you're building..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 19-7z"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       FOOTER
+  ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p>Hemanth Sachin M.</p>
+          <p class="footer-role">Embedded &amp; Robotics Engineer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:contact@hemanthsachin.in">contact@hemanthsachin.in</a>
+          <a href="tel:9361158630">+91 93611 58630</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+    
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
